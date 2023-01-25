@@ -1,0 +1,307 @@
+html{
+  font-size: 62.5%;
+}
+
+p{
+    font-size: xx-large;
+}
+
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.background{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+
+}
+
+.background video {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+video{
+  position: fixed;
+}
+
+hr{
+  width: 70%;
+  background-color:rgba(255, 255, 255, 0.712);
+}
+
+.wrapper {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition: 1s;
+}
+
+.content{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.content p{
+  font-size: large;
+}
+
+.logo-img{
+    float: left;
+    position: relative;
+    margin-right: 15px;
+}
+
+button{
+  width: 130px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: 0px;
+}
+
+
+nav {
+  display: flex;
+  width: 90%;
+  position: fixed;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  background-color: black;
+  z-index: 2;
+}
+
+ul li a {
+  margin-left: 1.5em;
+  font-size: 25px;
+}
+
+a.logo {
+  margin-right: auto;
+  font-size: 25px;
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.25em;
+}
+
+a::after {
+  content:"";
+  top: 80%;
+  border-bottom: 2px solid #F8E71C;
+  transition: all 0.35s;
+  position: absolute;
+}
+
+a:hover::after {
+  transition: all 0.35s;
+}
+
+a::after {
+  right: 50%;
+  left: 50%;
+}
+
+
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a.logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 0px;
+  }
+  
+  ul {
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.logo {
+    margin: 1.5em;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  ul li {
+    margin: 0.3em;
+    text-align: center;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background-color: white;
+  margin: 25px;
+  width: 350px;
+  height: 550px;
+  color: black;
+}
+
+.card-img{
+  height: 300px;
+  width: 350px;
+  background: url(./img/ntr-oscar.JPG);
+}
+
+.card-img-1{
+  height: 300px;
+  width: 350px;
+  background: url(./img/ntr-korri.jpg);
+  background-repeat:round;
+}
+
+.card-img-3{
+  height: 300px;
+  width: 350px;
+  background: url(./img/ntratjapan.jpg);
+}
+
+
+.card:hover{
+  transform: scale(1.06);
+  transition: 0.4s;
+}
+
+.gallery-container p{
+  font-size: xx-large;
+}
+.gallery{
+  display:grid;
+  grid-template: repeat(5, 200px) / repeat(3, 300px);
+  align-content: center;
+  justify-content: center;
+  padding-top:10px;
+  gap: 10px;
+  margin-top: 10px;
+  grid-template-areas:
+  "a b b"
+  "a b b"
+  "c c f"
+  "c c f"
+  "g h k"
+  "g e k";
+}
+
+.gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.images1 {
+  grid-area: a;
+}
+.images2 {
+  grid-area: b;
+}
+.images3 {
+  grid-area: k;
+}
+.images4 {
+  grid-area: f;
+}
+.images5 {
+  grid-area: c;
+}
+.images6 {
+  grid-area:g ;
+  align-self: end;
+}
+.images7 {
+  grid-area:h ;
+}
+.images8 {
+  grid-area:e ;
+}
+
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.input , .Message{
+  width: 580px;
+  height: 60px;
+  display: block;
+  margin-top: 10px;
+  border-color: none;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input:focus,.Message:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgb(138, 137, 137);
+  background-color: rgba(255, 255, 255, 0.957);
+}
+
+.btn:hover{
+  color:white;
+  background-color: black;
+  border-color: white;
+  box-shadow: 0 0 20px rgb(138, 137, 137);
+}
+
