@@ -191,20 +191,20 @@ a::after {
 .card-img{
   height: 300px;
   width: 350px;
-  background: url(./img/ntr-oscar.JPG);
+  background: url(./ntr-oscar.JPG);
 }
 
 .card-img-1{
   height: 300px;
   width: 350px;
-  background: url(./img/ntr-korri.jpg);
+  background: url(./ntr-korri.jpg);
   background-repeat:round;
 }
 
 .card-img-3{
   height: 300px;
   width: 350px;
-  background: url(./img/ntratjapan.jpg);
+  background: url(./ntratjapan.jpg);
 }
 
 
