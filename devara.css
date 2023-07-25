@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%;
+  }
+  
+  p{
+      font-size: large;
+      text-align: center;
+  }
+  
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    font-size: x-large;
+}
+
+  body{
+      margin: 0.1px;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background-color: rgb(255, 236, 253);
+  }
+
+.embeedVideo{
+    text-align: center;
+}
+
+.feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet{
+    width: 20%;
+    margin-left: 30px;
+}
