@@ -39,3 +39,11 @@ h2{
     width: 20%;
     margin-left: 30px;
 }
+
+.wrapper {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: 1s;
+  }
